@@ -151,7 +151,7 @@ function makeChangeMachine(startingChange) {
       
       const testMachine = new StateManager(state,amount)
       const successFn = new FunctionRunner(fn1)
-      const errorFn = new FunctionRunner(fn2)
+      const failureFn = new FunctionRunner(fn2)
 
       const checkPossible = testMachine.checkIfPossible();
       
@@ -175,7 +175,7 @@ function makeChangeMachine(startingChange) {
         
         
       } else {
-        errorFn.run(); 
+        failureFn.run(); 
 
         let remainingCents = testMachine.remainingCoinInRegister();
         console.log(`because the previous call used up all but ${remainingCents}¢`)
