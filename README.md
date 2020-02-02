@@ -1,6 +1,8 @@
 # change-Machine
 This is my solution to a coding challenge that requires you to create a change machine that takes an amount and gives the required amount of change from the given register.
 
+My hope that this code can help others gain insights and provide feedback for how I can improve the code.
+
 ## Initializing change machine
 To create your change machine you must call the makeChangeMachine function and pass in the initial state of the starting register.
 
